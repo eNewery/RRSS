@@ -1,0 +1,101 @@
+.addBtn{
+  width: 150px;
+  border: 0px;
+  height: 35px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff5845;
+  border-radius: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: absolute;
+right: 0;
+transition: 0.3s;
+cursor: pointer;
+}
+.addBtn:hover{
+  background-color: #a3382c;
+  transition: 0.3s;
+}
+
+.barContainer{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+}
+.barInputContainer{
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1em;
+border: none;
+background-color: #edeef0;
+color: #b7b8ba;
+height: 25px;
+}
+.barInput{
+  width: 100%;
+border-radius: 1em;
+margin-left: 1em;
+  border: none;
+  background-color: #edeef0;
+  color: #b7b8ba;
+  outline: none;
+font-size: 12px;
+height: 22px;
+  }
+.barInput::placeholder{
+}
+/* Navbar */
+
+.navbarContainer{
+  position: absolute;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+}
+.navbarItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.navbarItem span{
+  font-size: 24px;
+  color: #ff5845;
+  background-color: #edeef0;
+  border-radius: 0.7em;
+  padding: 0.2em;
+  transition:0.3s;
+  cursor: pointer;
+  width: 24px;
+}
+.navbarItem:hover span {
+  background-color: #ff5845;
+  color: #edeef0;
+  transition: 0.3s;
+  width: 100px;
+}
+.navbarItemText{
+  position: absolute;
+  top: 8px;
+  text-align: center;
+  color: white;
+  right: 10px;
+  z-index: 10;
+  font-family: sans-serif;
+  opacity: 0;
+  cursor: pointer;
+}
+.navbarItem:hover .navbarItemText {
+  opacity: 1; /* Cambiar a opacidad 1 al hacer hover */
+  transition: 0.3s;
+}
+/* Navbar */
